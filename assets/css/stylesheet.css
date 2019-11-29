@@ -482,6 +482,18 @@ main .main__about {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
+  .main__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   aside {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
