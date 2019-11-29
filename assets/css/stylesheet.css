@@ -552,4 +552,34 @@ main .main__about {
             flex-direction: row;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .main__header {
+    height: 84px !important;
+  }
+  .main__header .main__header--logo #logo {
+    width: 60px;
+  }
+  .main__header .main__header--logo h2 {
+    font-size: 22px;
+  }
+  .main__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main__footer .main__about {
+    font-size: 16px;
+  }
+  .section__header .section__name {
+    font-size: 30px;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */

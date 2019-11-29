@@ -405,3 +405,39 @@ main {
 
 
 }
+
+@media screen and (max-width: 375px) {
+
+
+    .main__header {
+        height: 84px !important;
+
+        .main__header--logo {
+            #logo {
+                width: 60px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    .main__footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .main__about {
+            font-size: 16px;
+        }
+
+
+    }
+
+    .section__header {
+        .section__name {
+            font-size: 30px;
+        }
+    }
+}
