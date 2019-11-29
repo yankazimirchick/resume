@@ -565,7 +565,7 @@ main .main__about {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
   .main__header {
     height: 84px !important;
   }
