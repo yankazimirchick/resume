@@ -431,10 +431,19 @@ main {
         border-right: unset;
     }
 
+    .intro {
+        flex-direction: column-reverse;
+    }
+
+    .intro {
+        border-right: unset;
+    }
+
     .main__header {
         height: 84px !important;
 
         .main__header--logo {
+
             #logo {
                 width: 60px;
             }
