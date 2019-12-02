@@ -109,6 +109,118 @@ table {
   cursor: pointer;
 }
 
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 100vh;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
 @font-face {
   font-family: 'Modern No. 20';
   src: url("../fonts/Modern No. 20.eot");
@@ -146,8 +258,7 @@ body {
 }
 
 .gallery img {
-  -webkit-filter: invert(10%);
-          filter: invert(10%);
+  opacity: 1;
   -webkit-transition: 1s;
   transition: 1s;
   width: 42%;
@@ -156,8 +267,7 @@ body {
 }
 
 .gallery img:hover {
-  -webkit-filter: invert(0%);
-          filter: invert(0%);
+  opacity: 0.9;
   -webkit-transition: 1s;
   transition: 1s;
   cursor: pointer;
@@ -333,7 +443,6 @@ main section .section__name {
   font-size: 43px;
   padding-top: 30px;
   color: #2c2c2c;
-  text-transform: uppercase;
 }
 
 main section .section__name hr {
@@ -475,6 +584,15 @@ main .main__about {
 
 
 }*/
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .intro {
     -webkit-box-orient: vertical;
@@ -566,6 +684,9 @@ main .main__about {
 }
 
 @media screen and (max-width: 414px) {
+  .intro {
+    border-right: unset;
+  }
   .main__header {
     height: 84px !important;
   }
@@ -592,6 +713,117 @@ main .main__about {
   }
   .section__header .section__name {
     font-size: 30px;
+  }
+  .section__work span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #404040;
+  }
+}
+
+@media only screen and (min-width: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .intro {
+    border-right: unset;
+  }
+  .intro {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: unset;
+    width: 100%;
+    position: relative;
+    padding: 0px 0px;
+  }
+  aside .main-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside .round {
+    width: 100px;
+    height: 100px;
+  }
+  aside .aside__info {
+    display: none;
+  }
+  aside h3 {
+    display: none;
+  }
+  aside p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside .aside__links {
+    display: none;
+  }
+  main {
+    width: 100%;
+    overflow: unset;
+  }
+  main section {
+    padding: 0 5px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main section .section__work {
+    width: unset;
+  }
+  main section .section__work span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: #404040;
+  }
+  main section .section__work__about {
+    padding-left: 30px;
+    border-left: 1px solid #e3e3e3;
+  }
+  main .section__header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */

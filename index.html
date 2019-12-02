@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <title>CV-Yan Kazimirchick</title>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
@@ -18,11 +19,9 @@
             <!-- <h3>
                 Profile
             </h3> -->
-            <p>I am ready to learn new technologies;<br>
-                I am ready to learn the tools that are needed in commercial development;
-                I have a technical education. At the university he practiced various
-                programming languages, etc; I adapt easily in society;<br> I have a military card.
-                I will not be taken into the army;<br> I am ready for moving and business trips.</p>
+            <p> I am ready to learn new technologies<br> and tools that are needed in commercial development;
+                I adapt easily in society;<br>
+                I have a military card.<br></p>
 
             <br>
             <div class="aside__info">
@@ -51,8 +50,9 @@
                 <button class="aside__button"><img src="assets/svg/telegram.svg" alt=""></button>
                 <button class="aside__button"><img src="assets/svg/vk.svg" alt=""></button>
                 <button class="aside__button"><img src="assets/svg/linkedin.svg" alt=""></button>
-                <button class="aside__button"><img src="assets/svg/email.svg" alt=""></button>
             </div>
+
+
 
         </aside>
         <!-- *************  main block *************   -->
@@ -99,7 +99,7 @@
                     <img src="assets/svg/tie-2.svg" alt="">
                 </div>
                 <div class="section__name">
-                    work Experience
+                    Work experience
                     <hr>
                 </div>
             </section>
@@ -225,7 +225,7 @@
                     <div class="skills">
                         PHP/laravel
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 10%"></span></div>
                         </div>
 
                     </div>
@@ -234,42 +234,42 @@
                     <div class="skills">
                         BOOTSTRAP 3
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 70%"></span></div>
                         </div>
 
                     </div>
                     <div class="skills">
                         WORDPRESS
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 40%"></span></div>
                         </div>
 
                     </div>
                     <div class="skills">
                         HTML/CSS
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 70%"></span></div>
                         </div>
 
                     </div>
                     <div class="skills">
                         Git
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 40%"></span></div>
                         </div>
 
                     </div>
                     <div class="skills">
                         Photoshop
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 70%"></span></div>
                         </div>
 
                     </div>
                     <div class="skills">
                         After effect
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 30%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 20%"></span></div>
                         </div>
 
                     </div>
@@ -324,26 +324,33 @@
                     <img src="assets/svg/gallery-2-01.svg" alt="">
                 </div>
                 <div class="section__name">
-                    portfolio-graphics
+                    Portfolio
                     <hr>
                 </div>
 
             </section>
+
+
+
             <section>
                 <div class="section__work">
                     <p>MENUS</p>
                     <span><b>for bar</b></span>
                 </div>
                 <div class="section__work__about">
+                    <!-- Trigger the Modal -->
 
+
+
+                    <!-- The Modal -->
 
                     <div class="gallery">
-                        <img src="assets/img/portfolio/menu/grand-1.jpg" alt="">
-                        <img src="assets/img/portfolio/menu/grand-2.jpg" alt="">
-                        <img src="assets/img/portfolio/menu/pizza-1.jpg" alt="">
-                        <img src="assets/img/portfolio/menu/pizza-2.jpg" alt="">
-                        <img src="assets/img/portfolio/menu/vine-1.jpg" alt="">
-                        <img src="assets/img/portfolio/menu/vine-2.jpg" alt="">
+                        <img id="myImg" src="assets/img/portfolio/menu/grand-1.jpg" alt="Snow">
+                        <img id="myImg" src="assets/img/portfolio/menu/grand-2.jpg" alt="Snow1">
+                        <img id="myImg" src="assets/img/portfolio/menu/pizza-1.jpg" alt="">
+                        <img id="myImg" src="assets/img/portfolio/menu/pizza-2.jpg" alt="">
+                        <img id="myImg" src="assets/img/portfolio/menu/vine-1.jpg" alt="">
+                        <img id="myImg" src="assets/img/portfolio/menu/vine-2.jpg" alt="">
                     </div>
 
 
@@ -353,6 +360,19 @@
 
         </main>
     </div>
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="ImgModal">
+
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
 </body>
+<script src="assets/js/main.js"></script>
 
 </html>
