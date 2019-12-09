@@ -35,7 +35,7 @@ close.onclick = function () {
 next.onclick = function () {
     var item = document.querySelectorAll('#myImg');
     //   console.log(item.item(2));
-    modalImg.src = "http://127.0.0.1:5500/site/assets/img/portfolio/sites/site-1.jpg";
+    //modalImg.src = "http://127.0.0.1:5500/site/assets/img/portfolio/sites/site-1.jpg";
 
     //   console.log(modalImg.src); //текущий
     // modalImg.src = item.item(2);
