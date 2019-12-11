@@ -25,13 +25,14 @@ for (var i = 0; i < imageUrl.length; ++i) {
 
 // Get the <span> element that closes the modal
 var close = document.getElementsByClassName("close")[0];
-var next = document.getElementsByClassName("next-img")[0];
+//var next = document.getElementsByClassName("next-img")[0];
 
 // When the user clicks on <span> (x), close the modal
 close.onclick = function () {
     modal.style.display = "none";
     document.body.style.overflow = 'auto';
 }
+/*
 next.onclick = function () {
     var item = document.querySelectorAll('#myImg');
     //   console.log(item.item(2));
@@ -40,4 +41,4 @@ next.onclick = function () {
     //   console.log(modalImg.src); //текущий
     // modalImg.src = item.item(2);
     //modalImg.src = modalImg.src;
-}
+}*/
