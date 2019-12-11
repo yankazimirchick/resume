@@ -17,8 +17,8 @@ function imgMin() {
         .pipe(imagemin([
             imgCompress({
                 loops: 4,
-                min: 50,
-                max: 80,
+                min: 50, //50
+                max: 70,
                 quality: 'high'
             }),
             imagemin.gifsicle(),
