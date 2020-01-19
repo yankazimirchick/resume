@@ -13,7 +13,7 @@ for (var i = 0; i < imageUrl.length; ++i) {
         modal.style.display = "block";
         modalImg.src = this.src;
         var str = modalImg.src;
-        console.log(str);
+        console.log(this.readyState);
         modalImg.src = str.toString().replace('_small', ''); //замена картинки
         captionText.innerHTML = this.alt;
         document.body.style.overflow = 'hidden';

@@ -19,7 +19,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-imagemin": "^6.2.0",
+    "gulp-minify": "^3.1.0",
     "gulp-sass": "^4.0.2",
+    "gulp-watch-sass": "^1.4.1",
     "node-sass": "^4.13.0"
   },
   "dependencies": {

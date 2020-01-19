@@ -1,3 +1,6 @@
+$main-color-yellow:#FFCC00;
+$main-color-middle:#e3e3e3;
+
 .main__button {
   display: flex;
   justify-content: center;
@@ -6,13 +9,13 @@
   height: 40px;
   border: none;
   margin: 0 0 0 10px;
-  background-color: #e3e3e3;
+  background-color: $main-color-middle;
 
   &:hover {
     /*filter: invert(100%);    */
-    background-color: #fc0;
+    background-color: $main-color-yellow;
     transition-duration: 0.5s;
-    box-shadow: 0 0 4px rgb(255, 204, 0);
+    box-shadow: 0 0 4px $main-color-yellow;
     cursor: pointer;
   }
 
@@ -26,7 +29,7 @@
   height: 40px;
   border: none;
 
-  background-color: #fc0;
+  background-color: $main-color-yellow;
 
   &:hover img {
     filter: invert(30%);
