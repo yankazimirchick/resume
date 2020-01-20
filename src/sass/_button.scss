@@ -28,8 +28,7 @@ $main-color-middle:#e3e3e3;
   width: 40px;
   height: 40px;
   border: none;
-
-  background-color: $main-color-yellow;
+  background-color: transparent;
 
   &:hover img {
     filter: invert(30%);

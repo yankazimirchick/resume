@@ -61,6 +61,12 @@ function copyJs() {
         .pipe(gulp.dest('dist/js/'));
 }
 
+function copyVideos() {
+    return gulp.src('src/video/*.mp4')
+        .pipe(gulp.dest('dist/video'));
+}
+
+
 function cssMin() {
     return gulp.src('src/sass/*.scss')
         .pipe(sass({
@@ -75,6 +81,6 @@ function copyFonts() {
 }
 
 
-const build = gulp.series(copyJs, copyFonts, cssMin, imgMin, VideoPrevMin);
+const build = gulp.series(copyJs, copyFonts, cssMin, imgMin, copyVideos, VideoPrevMin);
 exports.default = build;
-gulp.task('basic-watch', gulp.series('styles', 'compressJs'));
+gulp.task('watch', gulp.series('styles', 'compressJs'));
