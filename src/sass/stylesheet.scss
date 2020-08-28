@@ -370,7 +370,9 @@ main {
     .intro {
         flex-direction: column-reverse;
     }
+
 }
+
 
 @media screen and (max-width: 768px) {
     .intro {
@@ -383,69 +385,83 @@ main {
         align-items: center;
     }
 
-    aside {
-        flex-direction: row;
-        height: unset;
-        width: 100%;
-        position: relative;
-        padding: 0px 0px;
-
-        .main-image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .round {
-            width: 100px;
-            height: 100px;
-        }
-
-        .aside__info {
-            display: none;
-        }
-
-        h3 {
-            display: none;
-        }
-
-        p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .aside__links {
-            display: none;
-        }
-    }
-
-    main {
-        width: 100%;
-        overflow: unset;
-
-        section {
-            padding: 0 5px;
-            flex-direction: column;
-
-            .section__work {
-                width: unset;
-                //padding: 0 15px;
-            }
-
-            .section__work__about {
-                padding-left: 30px;
-                border-left: 1px solid $main-color-middle;
-            }
-        }
-
-        .section__header {
-            flex-direction: row;
-        }
+    .button_group_portflio {
+        width: auto !important;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
     }
 
 
 }
+
+aside {
+    flex-direction: row;
+    height: unset;
+    width: 100%;
+    position: relative;
+    padding: 0px 0px;
+
+    .main-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .round {
+        width: 100px;
+        height: 100px;
+    }
+
+    .aside__info {
+        display: none;
+    }
+
+    h3 {
+        display: none;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside__links {
+        display: none;
+    }
+}
+
+main {
+    width: 100%;
+    overflow: unset;
+
+    section {
+        padding: 0 5px;
+        flex-direction: column;
+
+        .section__work {
+            width: unset;
+            //padding: 0 15px;
+        }
+
+        .section__work__about {
+            // padding-left: 30px;
+            // border-left: 1px solid $main-color-middle;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .section__header {
+        flex-direction: row;
+    }
+}
+
+
+
 
 
 
