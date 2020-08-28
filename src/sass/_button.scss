@@ -9,7 +9,11 @@ $main-color-middle:#e3e3e3;
   height: 40px;
   border: none;
   margin: 0 0 0 10px;
-  background-color: $main-color-middle;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: -6px -6px 16px #fff, 6px 6px 16px #d1cdc7;
+  transition: 0.5s;
+  outline: none;
 
   &:hover {
     /*filter: invert(100%);    */
@@ -17,6 +21,7 @@ $main-color-middle:#e3e3e3;
     transition-duration: 0.5s;
     box-shadow: 0 0 4px $main-color-yellow;
     cursor: pointer;
+    background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
   }
 
 }

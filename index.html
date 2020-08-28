@@ -204,7 +204,14 @@
 
                     </div>
                     <div class="skills">
-                        Wordpress
+                        Wordpress<br>Woocommerce
+                        <div class="progress-bar__container">
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 80%"></span></div>
+                        </div>
+
+                    </div>
+                    <div class="skills">
+                        Modx
                         <div class="progress-bar__container">
                             <div class="progress-bar"><span class="progress-bar-fill" style="width: 50%"></span></div>
                         </div>
@@ -336,8 +343,8 @@
             </section>
             <section>
                 <div class="section__work">
-                    <p>System administrator</p>
-                    <span><b>2017 / 2019</b><br>2 years & 2 month</span>
+                    <p>System<br>administrator</p>
+                    <span><b></b><br>7 month +</span>
                 </div>
                 <div class="section__work__about">
                     <p>
@@ -353,6 +360,25 @@
                         <br> - Setup and support for POS terminals;
                         <br> - Purchase, adjustment of office equipment and organization of repair.</p>
 
+                </div>
+
+
+
+            </section>
+            <section>
+                <div class="section__work">
+                    <p>Web developer</p>
+                    <span><b>2020 / nowadays</b><br>2 years & 2 month</span>
+                </div>
+                <div class="section__work__about">
+                    <p>
+
+                        <br> - Fullstack разработка сайтов на вордпресс/модX/создание лендингов
+                        <br> - Внесение правок на сайты с вп/модX/битрикс
+                        <br> - Верстка сайтов
+                        <br> - Оптимизация под pagespeed
+
+                    </p>
                 </div>
 
 
@@ -394,7 +420,8 @@
 
 
 
-            <section class="section__header">
+            <section id="portfolio" class="section__header">
+
                 <div class="section__icon">
                     <img src="dist/img/svg/gallery-2-01.svg" alt="">
                 </div>
@@ -405,178 +432,209 @@
 
             </section>
 
+
             <section>
-                <div class="section__work">
-                    <p>laravel(PHP)</p>
-                    <span><b><a href="https://github.com/yankazimirchick/MailAndDoc"> src on github
-                            </a></b></span>
+                <div class="button-group button_group_portflio filters-button-group">
+                    <button class="button   button_portflio is-checked" data-filter="*">all</button>
 
+                    <button class="button button_portflio" href="#portfolio" data-filter=".sites">DEVELOPED
+                        SITES</button>
+                    <button class="button button_portflio " href="#portfolio" data-filter=".php">LARAVEL(PHP)</button>
+                    <button class="button button_portflio" href="#portfolio" data-filter=".csharp">C#</button>
+                    <button class="button button_portflio" href="#portfolio" data-filter=".club"> CLUB FLAYER</button>
 
+                    <button class="button button_portflio" href="#portfolio" data-filter=".menus">menus</button>
                 </div>
-                <div class="section__work__about">
-                    <!-- Trigger the Modal -->
+            </section>
+            <section class="portfolio-area">
+
+
+                <div id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+
+                    <article class="club ">
+
+                        <div class="section__work ">
+                            <p>CLUB FLAYER</p>
+                            <span><b>For Night club</b></span>
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
+                            <div class="gallery">
+                                <video width="50%" controls poster="dist/video/goldenGirl.jpg">
+                                    <source src="dist/video/goldenGirl.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/graduateMeet.jpg">
+                                    <source src="dist/video/graduateMeet.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/djvojtik.jpg">
+                                    <source src="dist/video/djvojtik.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/djsubbota.jpg">
+                                    <source src="dist/video/djsubbota.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/blackGirl.jpg">
+                                    <source src="dist/video/blackGirl.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/musicSunday.jpg">
+                                    <source src="dist/video/musicSunday.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/cyberParty.jpg">
+                                    <source src="dist/video/cyberParty.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/newYear.jpg">
+                                    <source src="dist/video/newYear.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/iphoneStory.jpg">
+                                    <source src="dist/video/iphoneStory.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <video width="50%" controls poster="dist/video/Violin.jpg">
+                                    <source src="dist/video/Violin.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <!-- The Modal -->
+                            <div class="gallery">
+                                <img id="myImg" src="dist/img/portfolio/flayer/wata-1_small.jpg"
+                                    alt="Flayers for night club">
+                                <img id="myImg" src="dist/img/portfolio/flayer/black-1_small.jpg"
+                                    alt="Flayers for night club">
+
+                            </div>
+                        </div>
+                    </article>
+                    <article class="csharp ">
+                        <div class="section__work">
+                            <p>C#</p>
+                            <span><b>Graduation project<br><a href="https://github.com/yankazimirchick/diploma"> src on
+                                        github
+                                    </a></b></span>
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
 
 
 
-                    <!-- The Modal -->
+                            <!-- The Modal -->
 
-                    <div class="gallery">
+                            <div class="gallery">
 
 
-                        <img id="myImg" src="dist/img/portfolio/sites/doc-oborot_small.jpg"
-                            alt="CRUID APP.Designed for accounting letters in the enterprise. Login/main/add/import page.">
+                                <img id="myImg" src="dist/img/portfolio/sites/diploma_small.jpg"
+                                    alt="Диплом. Система формирования заказов станкостроительной продукции на БСЗ ЗАО «АТЛАНТ». Барановичи, 2017 г.">
 
-                    </div>
+                            </div>
 
+
+                        </div>
+                    </article>
+                    <article class="sites ">
+                        <div class="section__work">
+                            <p>Developed sites</p>
+                            <span><b>Wordpress or landing page</b></span>
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
+
+
+
+                            <!-- The Modal -->
+
+                            <div class="gallery">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-6_small.jpg" alt="saboy.by">
+
+                                <img id="myImg" src="dist/img/portfolio/sites/site-8_small.jpg" alt="floriglie.by">
+
+                                <img id="myImg" src="dist/img/portfolio/sites/site-7_small.jpg" alt="kvadratdesign.com">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-1_small.jpg"
+                                    alt="Website for 'Mariinski hotel'.Worked on Wordpress+Bootstrap 3. 2018">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-2_small.jpg"
+                                    alt="Website for 'Akreal bath'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-3_small.jpg"
+                                    alt="Website for 'Globber scooters'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-5_small.jpg"
+                                    alt="Landing page for medical centre. 2017">
+
+                            </div>
+
+
+                        </div>
+                    </article>
+                    <article class="menus ">
+
+                        <div class="section__work">
+                            <p>MENUS</p>
+                            <span><b>For cafe and bar</b></span>
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
+
+
+                            <!-- The Modal -->
+
+                            <div class="gallery">
+                                <img id="myImg" src="dist/img/portfolio/menu/grand-1_small.jpg"
+                                    alt="'Mariinski hotel' Breakfast Menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/grand-2_small.jpg" alt="'Grand Cafe' Menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/pizza-1_small.jpg" alt="'La P'azza' Menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/pizza-2_small.jpg"
+                                    alt="'La P'azza' Vine Menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/zavtrak_small.jpg"
+                                    alt="'La P'azza' Breakfast menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/vine-2_small.jpg" alt="Burger menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/otel-1_small.jpg"
+                                    alt="'Mariinski hotel' Menu">
+                                <img id="myImg" src="dist/img/portfolio/menu/dolche-vita_small.jpg"
+                                    alt="'Dolche vita'fast food menu">
+
+
+                            </div>
+
+                        </div>
+                    </article>
+                    <article class="php ">
+                        <div class="section__work">
+                            <p>laravel(PHP)</p>
+                            <span><b><a href="https://github.com/yankazimirchick/MailAndDoc"> src on github
+                                    </a></b></span>
+
+
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
+
+
+
+                            <!-- The Modal -->
+
+                            <div class="gallery">
+
+
+                                <img id="myImg" src="dist/img/portfolio/sites/doc-oborot_small.jpg"
+                                    alt="CRUID APP.Designed for accounting letters in the enterprise. Login/main/add/import page.">
+
+                            </div>
+
+
+                        </div>
+                    </article>
 
                 </div>
             </section>
-            <section>
-                <div class="section__work">
-                    <p>C#</p>
-                    <span><b>Graduation project<br><a href="https://github.com/yankazimirchick/diploma"> src on github
-                            </a></b></span>
-                </div>
-                <div class="section__work__about">
-                    <!-- Trigger the Modal -->
 
 
 
-                    <!-- The Modal -->
-
-                    <div class="gallery">
-
-
-                        <img id="myImg" src="dist/img/portfolio/sites/diploma_small.jpg"
-                            alt="Диплом. Система формирования заказов станкостроительной продукции на БСЗ ЗАО «АТЛАНТ». Барановичи, 2017 г.">
-
-                    </div>
-
-
-                </div>
-            </section>
-            <section>
-                <div class="section__work">
-                    <p>Developed sites</p>
-                    <span><b>Wordpress or landing page</b></span>
-                </div>
-                <div class="section__work__about">
-                    <!-- Trigger the Modal -->
 
 
 
-                    <!-- The Modal -->
-
-                    <div class="gallery">
-
-                        <img id="myImg" src="dist/img/portfolio/sites/site-1_small.jpg"
-                            alt="Website for 'Mariinski hotel'.Worked on Wordpress+Bootstrap 3. 2018">
-                        <img id="myImg" src="dist/img/portfolio/sites/site-2_small.jpg"
-                            alt="Website for 'Akreal bath'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
-                        <img id="myImg" src="dist/img/portfolio/sites/site-3_small.jpg"
-                            alt="Website for 'Globber scooters'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
-                        <img id="myImg" src="dist/img/portfolio/sites/site-5_small.jpg"
-                            alt="Landing page for medical centre. 2017">
-                    </div>
-
-
-                </div>
-            </section>
-            <section>
-
-                <div class="section__work">
-                    <p>MENUS</p>
-                    <span><b>For cafe and bar</b></span>
-                </div>
-                <div class="section__work__about">
-                    <!-- Trigger the Modal -->
-
-
-                    <!-- The Modal -->
-
-                    <div class="gallery">
-                        <img id="myImg" src="dist/img/portfolio/menu/grand-1_small.jpg"
-                            alt="'Mariinski hotel' Breakfast Menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/grand-2_small.jpg" alt="'Grand Cafe' Menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/pizza-1_small.jpg" alt="'La P'azza' Menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/pizza-2_small.jpg" alt="'La P'azza' Vine Menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/zavtrak_small.jpg"
-                            alt="'La P'azza' Breakfast menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/vine-2_small.jpg" alt="Burger menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/otel-1_small.jpg" alt="'Mariinski hotel' Menu">
-                        <img id="myImg" src="dist/img/portfolio/menu/dolche-vita_small.jpg"
-                            alt="'Dolche vita'fast food menu">
-
-
-                    </div>
-
-                </div>
-            </section>
-            <section>
-
-                <div class="section__work">
-                    <p>CLUB FLAYER</p>
-                    <span><b>For Night club</b></span>
-                </div>
-                <div class="section__work__about">
-                    <!-- Trigger the Modal -->
-
-                    <div class="gallery">
-                        <video width="50%" controls poster="dist/video/goldenGirl.jpg">
-                            <source src="dist/video/goldenGirl.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/graduateMeet.jpg">
-                            <source src="dist/video/graduateMeet.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/djvojtik.jpg">
-                            <source src="dist/video/djvojtik.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/djsubbota.jpg">
-                            <source src="dist/video/djsubbota.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/blackGirl.jpg">
-                            <source src="dist/video/blackGirl.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/musicSunday.jpg">
-                            <source src="dist/video/musicSunday.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/cyberParty.jpg">
-                            <source src="dist/video/cyberParty.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/newYear.jpg">
-                            <source src="dist/video/newYear.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/iphoneStory.jpg">
-                            <source src="dist/video/iphoneStory.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <video width="50%" controls poster="dist/video/Violin.jpg">
-                            <source src="dist/video/Violin.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-
-
-                    </div>
-
-                    <!-- The Modal -->
-
-                    <div class="gallery">
-                        <img id="myImg" src="dist/img/portfolio/flayer/wata-1_small.jpg" alt="Flayers for night club">
-                        <img id="myImg" src="dist/img/portfolio/flayer/black-1_small.jpg" alt="Flayers for night club">
-
-                    </div>
-
-
-                </div>
-            </section>
 
 
         </main>
@@ -594,6 +652,8 @@
         <div id="caption"></div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script src="dist/js/main-min.js"></script>
 
 </html>

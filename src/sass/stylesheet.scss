@@ -39,12 +39,13 @@
 
 $main-color-dark:#2c2c2c;
 $main-color-light:#f7f7f7;
-$main-color-middle:#e3e3e3;
+$main-color-middle:#0a0909;
 $main-color-yellow:#FFCC00;
 
 
 body {
     @include Open-Sans-400;
+    background: #efeeee;
 }
 
 .skills {
@@ -52,6 +53,10 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 250px;
+
+    line-height: 1;
+    height: 27px;
+    margin: 4px 0;
 }
 
 .gallery {
@@ -107,8 +112,9 @@ body {
 }
 
 aside {
-    width: 28%;
-    background-color: $main-color-yellow;
+    width: 25%;
+    background-image: linear-gradient(135deg, #FD6E6A 10%, #FFC600 100%);
+    // background-color: $main-color-yellow;
     color: $main-color-dark;
     position: relative;
     display: flex;
@@ -148,9 +154,7 @@ aside {
     }
 
     .round {
-        border-radius: 100%;
-        border: 5px solid $main-color-dark;
-        width: 240px;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -201,7 +205,11 @@ aside {
 main {
     position: relative;
     overflow: hidden;
-    width: 72%;
+    width: 75%;
+
+    background: #fff;
+
+    .section {}
 
     section {
         display: flex;
@@ -226,15 +234,21 @@ main {
 
             hr {
                 font-size: 7px;
+                margin-top: 15px;
             }
         }
 
         .section__work {
             flex: 2;
-            width: 40px;
+            // width: 40px;
             padding: 0 15px;
             color: #808285;
             line-height: 1.2;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
 
             p {
 
@@ -253,8 +267,8 @@ main {
             flex: 6;
             color: #4f4f50;
             line-height: 25px;
-            border-left: 1px solid black;
-            padding-left: 40px;
+            // border-left: 1px solid black;
+            //  padding-left: 40px;
             line-height: 1.5;
 
 
@@ -279,11 +293,13 @@ main {
 
     .main__header {
         margin: 20px 0 0 0px;
-        background-color: $main-color-middle;
+        background-color: #fff;
         height: 165px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px;
+        box-shadow: -6px -6px 16px #fff, 6px 6px 16px #d1cdc7;
     }
 
     .main__header--logo {
@@ -590,4 +606,37 @@ main {
             flex-direction: row;
         }
     }
+}
+
+.button_group_portflio {
+    background: #efeeee;
+    border-radius: 10px;
+    box-shadow: -6px -6px 16px #fff, 6px 6px 16px #d1cdc7;
+    padding: 18px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button.button_portflio {
+    background: #efeeee;
+    border-radius: 10px;
+    box-shadow: -6px -6px 16px #fff, 6px 6px 16px #d1cdc7;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    outline: none;
+}
+
+.button_portflio.is-checked {
+    background: #ffffff !important;
+    box-shadow: inset -6px -6px 16px #fff, inset 6px 6px 16px #d1cdc7 !important;
+}
+
+#grid-container {
+    display: flex;
+    width: 100%;
 }
