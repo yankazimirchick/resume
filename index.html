@@ -9,7 +9,15 @@
     <title>CV-Yan Kazimirchick</title>
     <link rel="stylesheet" href="dist/css/stylesheet.css">
 </head>
-
+<style>
+    .d-none{
+        display: none;
+    }
+    #grid-container  article{
+        width: 100%;
+       
+    }
+</style>
 <body>
     <div class="intro">
         <!-- *************  aside block *************   -->
@@ -174,9 +182,9 @@
 
 
                     <div class="skills">
-                        PHP/laravel
+                        PHP
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 10%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 50%"></span></div>
                         </div>
 
                     </div>
@@ -190,9 +198,9 @@
 
 
                     <div class="skills">
-                        BOOTSTRAP 3
+                        BOOTSTRAP 3/4
                         <div class="progress-bar__container">
-                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 60%"></span></div>
+                            <div class="progress-bar"><span class="progress-bar-fill" style="width: 80%"></span></div>
                         </div>
 
                     </div>
@@ -273,15 +281,15 @@
                         </div>
 
                     </div>
-
-                    <div class="skills">
+                    
+                    <div class="skills d-none">
                         CAD SolidWorks
                         <div class="progress-bar__container">
                             <div class="progress-bar"><span class="progress-bar-fill" style="width: 65%"></span></div>
                         </div>
 
                     </div>
-                    <div class="skills">
+                    <div class="skills d-none">
                         CAD Компас-3D
                         <div class="progress-bar__container">
                             <div class="progress-bar"><span class="progress-bar-fill" style="width: 65%"></span></div>
@@ -344,7 +352,7 @@
             <section>
                 <div class="section__work">
                     <p>System<br>administrator</p>
-                    <span><b></b><br>7 month +</span>
+                    <span><b>2017 / 2019</b><br>2 years & 2 month</span>
                 </div>
                 <div class="section__work__about">
                     <p>
@@ -368,15 +376,15 @@
             <section>
                 <div class="section__work">
                     <p>Web developer</p>
-                    <span><b>2020 / nowadays</b><br>2 years & 2 month</span>
+                    <span><b>2020 / nowadays</b><br>1 years & 3 month</span>
                 </div>
                 <div class="section__work__about">
                     <p>
 
-                        <br> - Fullstack разработка сайтов на вордпресс/модX/создание лендингов
-                        <br> - Внесение правок на сайты с вп/модX/битрикс
-                        <br> - Верстка сайтов
-                        <br> - Оптимизация под pagespeed
+                        <br> - Website development for WordPress, Bitrix , landing pages.
+                        <br> - Making edits  to sites with WP, ModX, Bitrix.   
+                        <br> - HTML/Sass coding.
+                        <br> - Optimization for pagespeed/GtMetrix.
 
                     </p>
                 </div>
@@ -435,9 +443,9 @@
 
             <section>
                 <div class="button-group button_group_portflio filters-button-group">
-                    <button class="button   button_portflio is-checked" data-filter="*">all</button>
+                    <button class="button   button_portflio is-checked " data-filter="*">all</button>
 
-                    <button class="button button_portflio" href="#portfolio" data-filter=".sites">DEVELOPED
+                    <button class="button button_portflio " href="#portfolio" data-filter=".sites">DEVELOPED
                         SITES</button>
                     <button class="button button_portflio " href="#portfolio" data-filter=".php">LARAVEL(PHP)</button>
                     <button class="button button_portflio" href="#portfolio" data-filter=".csharp">C#</button>
@@ -450,7 +458,89 @@
 
 
                 <div id="grid-container" class="transitions-enabled fluid masonry js-masonry grid">
+                    <article class="sites ">
+                        <div class="section__work">
+                            <p>Developed sites</p>
+                            <span><b>Wordpress or landing page</b></span>
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
 
+
+
+                            <!-- The Modal -->
+
+                            <div class="gallery">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-6_small.jpg" alt="saboy.by">
+
+                                <img id="myImg" src="dist/img/portfolio/sites/site-8_small.jpg" alt="floriglie.by">
+
+                                <img id="myImg" src="dist/img/portfolio/sites/site-7_small.jpg" alt="kvadratdesign.com">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-1_small.jpg"
+                                    alt="Website for 'Mariinski hotel'.Worked on Wordpress+Bootstrap 3. 2018">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-2_small.jpg"
+                                    alt="Website for 'Akreal bath'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-3_small.jpg"
+                                    alt="Website for 'Globber scooters'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
+                                <img id="myImg" src="dist/img/portfolio/sites/site-5_small.jpg"
+                                    alt="Landing page for medical centre. 2017">
+
+                            </div>
+
+
+                        </div>
+                    </article>
+                    <article class="php ">
+                        <div class="section__work">
+                            <p>laravel(PHP)</p>
+                            <span><b><a href="https://github.com/yankazimirchick/MailAndDoc"> src on github
+                                    </a></b></span>
+
+
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
+
+
+
+                            <!-- The Modal -->
+
+                            <div class="gallery">
+
+
+                                <img id="myImg" src="dist/img/portfolio/sites/doc-oborot_small.jpg"
+                                    alt="CRUID APP.Designed for accounting letters in the enterprise. Login/main/add/import page.">
+
+                            </div>
+
+
+                        </div>
+                    </article>
+                    <article class="csharp ">
+                        <div class="section__work">
+                            <p>C#</p>
+                            <span><b>Graduation project<br><a href="https://github.com/yankazimirchick/diploma"> src on
+                                        github
+                                    </a></b></span>
+                        </div>
+                        <div class="section__work__about">
+                            <!-- Trigger the Modal -->
+
+
+
+                            <!-- The Modal -->
+
+                            <div class="gallery">
+
+
+                                <img id="myImg" src="dist/img/portfolio/sites/diploma_small.jpg"
+                                    alt="Диплом. Система формирования заказов станкостроительной продукции на БСЗ ЗАО «АТЛАНТ». Барановичи, 2017 г.">
+
+                            </div>
+
+
+                        </div>
+                    </article>
                     <article class="club ">
 
                         <div class="section__work ">
@@ -511,63 +601,8 @@
                             </div>
                         </div>
                     </article>
-                    <article class="csharp ">
-                        <div class="section__work">
-                            <p>C#</p>
-                            <span><b>Graduation project<br><a href="https://github.com/yankazimirchick/diploma"> src on
-                                        github
-                                    </a></b></span>
-                        </div>
-                        <div class="section__work__about">
-                            <!-- Trigger the Modal -->
 
-
-
-                            <!-- The Modal -->
-
-                            <div class="gallery">
-
-
-                                <img id="myImg" src="dist/img/portfolio/sites/diploma_small.jpg"
-                                    alt="Диплом. Система формирования заказов станкостроительной продукции на БСЗ ЗАО «АТЛАНТ». Барановичи, 2017 г.">
-
-                            </div>
-
-
-                        </div>
-                    </article>
-                    <article class="sites ">
-                        <div class="section__work">
-                            <p>Developed sites</p>
-                            <span><b>Wordpress or landing page</b></span>
-                        </div>
-                        <div class="section__work__about">
-                            <!-- Trigger the Modal -->
-
-
-
-                            <!-- The Modal -->
-
-                            <div class="gallery">
-                                <img id="myImg" src="dist/img/portfolio/sites/site-6_small.jpg" alt="saboy.by">
-
-                                <img id="myImg" src="dist/img/portfolio/sites/site-8_small.jpg" alt="floriglie.by">
-
-                                <img id="myImg" src="dist/img/portfolio/sites/site-7_small.jpg" alt="kvadratdesign.com">
-                                <img id="myImg" src="dist/img/portfolio/sites/site-1_small.jpg"
-                                    alt="Website for 'Mariinski hotel'.Worked on Wordpress+Bootstrap 3. 2018">
-                                <img id="myImg" src="dist/img/portfolio/sites/site-2_small.jpg"
-                                    alt="Website for 'Akreal bath'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
-                                <img id="myImg" src="dist/img/portfolio/sites/site-3_small.jpg"
-                                    alt="Website for 'Globber scooters'.Make Front-end and install Wordpress.Worked on Wordpress + Bootstrap 3. 2017">
-                                <img id="myImg" src="dist/img/portfolio/sites/site-5_small.jpg"
-                                    alt="Landing page for medical centre. 2017">
-
-                            </div>
-
-
-                        </div>
-                    </article>
+                   
                     <article class="menus ">
 
                         <div class="section__work">
@@ -600,32 +635,7 @@
 
                         </div>
                     </article>
-                    <article class="php ">
-                        <div class="section__work">
-                            <p>laravel(PHP)</p>
-                            <span><b><a href="https://github.com/yankazimirchick/MailAndDoc"> src on github
-                                    </a></b></span>
 
-
-                        </div>
-                        <div class="section__work__about">
-                            <!-- Trigger the Modal -->
-
-
-
-                            <!-- The Modal -->
-
-                            <div class="gallery">
-
-
-                                <img id="myImg" src="dist/img/portfolio/sites/doc-oborot_small.jpg"
-                                    alt="CRUID APP.Designed for accounting letters in the enterprise. Login/main/add/import page.">
-
-                            </div>
-
-
-                        </div>
-                    </article>
 
                 </div>
             </section>
@@ -652,8 +662,10 @@
         <div id="caption"></div>
     </div>
 </body>
+
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-<script src="dist/js/main-min.js"></script>
+<script src="dist/js/main.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 </html>
